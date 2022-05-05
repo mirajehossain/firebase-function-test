@@ -41,14 +41,14 @@ jobs:
         with:
           args: functions:config:unset env
         env:
-          FIREBASE_TOKEN: "AAAAvSQXOTc:APA91bHSAZbKQwp0CE1FNDR8AYzqDaFDyUVCVBlwWAQNobUO81H5Nov7xsnqVaUo5662K2QSx_9nqQzzqfV7MsV-tILzs1OxP73awTBZo5iCVjsrW6g5bLwaWlLYO7vM1zFNCQFnO54p"
+          FIREBASE_TOKEN: "1//0gpvOLXHtPb5LCgYIARAAGBASNwF-L9IrcnJwYgYwNaIWdFsBfdWO6gv_7Up2ARFVgdkVti_rbsVONF8hIVOXYB68oHyb39ubrdU"
         # store the env data
       - name: set env configs
         uses: w9jds/firebase-action@master
         with:
           args: functions:config:set env=\"$(cat functions/env.json)\"
         env:
-          FIREBASE_TOKEN: "AAAAvSQXOTc:APA91bHSAZbKQwp0CE1FNDR8AYzqDaFDyUVCVBlwWAQNobUO81H5Nov7xsnqVaUo5662K2QSx_9nqQzzqfV7MsV-tILzs1OxP73awTBZo5iCVjsrW6g5bLwaWlLYO7vM1zFNCQFnO54p"
+          FIREBASE_TOKEN: "1//0gpvOLXHtPb5LCgYIARAAGBASNwF-L9IrcnJwYgYwNaIWdFsBfdWO6gv_7Up2ARFVgdkVti_rbsVONF8hIVOXYB68oHyb39ubrdU"
         # The below task uses the w9jds/firebase-action@master action with the appropriate argument
         # to deploy your firebase cloud functions.
       - name: deploy to production
@@ -56,7 +56,7 @@ jobs:
         with:
           args: deploy --only functions
         env:
-          FIREBASE_TOKEN: "AAAAvSQXOTc:APA91bHSAZbKQwp0CE1FNDR8AYzqDaFDyUVCVBlwWAQNobUO81H5Nov7xsnqVaUo5662K2QSx_9nqQzzqfV7MsV-tILzs1OxP73awTBZo5iCVjsrW6g5bLwaWlLYO7vM1zFNCQFnO54p"
+          FIREBASE_TOKEN: "1//0gpvOLXHtPb5LCgYIARAAGBASNwF-L9IrcnJwYgYwNaIWdFsBfdWO6gv_7Up2ARFVgdkVti_rbsVONF8hIVOXYB68oHyb39ubrdU"
 
 
 
